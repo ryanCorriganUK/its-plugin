@@ -99,5 +99,21 @@ class ITS_Web_Admin {
 		wp_enqueue_script( $this->ITS_Web, plugin_dir_url( __FILE__ ) . 'js/its-web-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
+	
 
 }
+
+/**
+ *Set the footer text in the admin area
+ *
+ *@since    1.0.0
+ */
+function ITS_Web_edit_footer() {
+    add_filter( 'admin_footer_text', 'ITS_Web_edit_text', 11 );
+}
+
+function ITS_Web_edit_text($content) {
+    return "Website made by <a href=\"http://www.itsweb.uk.com\" target=\"_blank\">ITS Web</a>";
+}
+
+add_action( 'admin_init', 'ITS_Web_edit_footer' );
