@@ -68,7 +68,7 @@ class ITS_Web {
 	 */
 	public function __construct() {
 
-		$this->ITS_Web = 'plugin-name';
+		$this->ITS_Web = 'its-web';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
@@ -100,24 +100,24 @@ class ITS_Web {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-its-web-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-its-web-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-plugin-name-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-its-web-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-plugin-name-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-its-web-public.php';
 
 		$this->loader = new ITS_Web_Loader();
 

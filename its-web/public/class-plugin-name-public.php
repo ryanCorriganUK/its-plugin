@@ -73,7 +73,7 @@ class ITS_Web_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->ITS_Web, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->ITS_Web, plugin_dir_url( __FILE__ ) . 'css/its-web-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,7 +96,7 @@ class ITS_Web_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->ITS_Web, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->ITS_Web, plugin_dir_url( __FILE__ ) . 'js/its-web-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 
