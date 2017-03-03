@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
+ * @link              http://www.itsweb.uk.com/
  * @since             1.0.0
  * @package           ITS_Web
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Plugin Boilerplate
- * Plugin URI:        http://example.com/its-web-uri/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin Name:       ITS Web WordPress settings
+ * Plugin URI:        http://www.itsweb.uk.com/
+ * Description:       This plugin contains WordPress settings by ITS Web, do not deactivate this plugin or your site may stop working as intended.
  * Version:           1.0.0
- * Author:            Your Name or Your Company
- * Author URI:        http://example.com/
+ * Author:            ITS Web
+ * Author URI:        http://www.itsweb.uk.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       its-web
