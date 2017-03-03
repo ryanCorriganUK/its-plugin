@@ -32,19 +32,19 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-its-web-activator.php
+ * This action is documented in includes/its-web-activator.php
  */
 function activate_ITS_Web() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-its-web-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/its-web-activator.php';
 	ITS_Web_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-its-web-deactivator.php
+ * This action is documented in includes/its-web-deactivator.php
  */
 function deactivate_ITS_Web() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-its-web-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/its-web-deactivator.php';
 	ITS_Web_Deactivator::deactivate();
 }
 
@@ -55,7 +55,7 @@ register_deactivation_hook( __FILE__, 'deactivate_ITS_Web' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-its-web.php';
+require plugin_dir_path( __FILE__ ) . 'includes/its-web.php';
 
 /**
  * Begins execution of the plugin.
